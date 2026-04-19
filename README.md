@@ -13,7 +13,6 @@ Configure leader key bindings that align with Wezterm's default keybindings.
 | `LEADER + SHIFT + Tab` | Previous tab |
 | `LEADER + 1-8` | Switch to tab 1-8 |
 | `LEADER + 9` | Switch to last tab |
-| `LEADER + {` / `}` | Previous / Next tab |
 | `LEADER + r` | Reload configuration |
 | `LEADER + t` | New tab |
 | `LEADER + w` | Close pane |

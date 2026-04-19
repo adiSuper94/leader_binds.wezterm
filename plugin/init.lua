@@ -43,8 +43,6 @@ function M.apply_to_config(config, opts)
     { key = "Tab",        mods = "LEADER",         action = act.ActivateTabRelative(1) },
     { key = "Tab",        mods = "LEADER | SHIFT", action = act.ActivateTabRelative(-1) },
     { key = "9",          mods = "LEADER",         action = act.ActivateTab(-1) },
-    { key = "{",          mods = "LEADER",         action = act.ActivateTabRelative(-1) },
-    { key = "}",          mods = "LEADER",         action = act.ActivateTabRelative(1) },
 
     { key = "r",          mods = "LEADER",         action = act.ReloadConfiguration },
     { key = "t",          mods = "LEADER",         action = act.SpawnTab("CurrentPaneDomain") },
