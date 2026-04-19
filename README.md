@@ -7,8 +7,20 @@ Configure leader key bindings that align with Wezterm's default keybindings.
 | Keys | Action |
 |------|--------|
 | `LEADER + <Arrow>` | Navigate panes |
-| `LEADER \| SHIFT + "`|  Split vertically |
-| `LEADER \| SHIFT + %`|  Split horizontally |
+| `LEADER \| + "` | Split vertically |
+| `LEADER \| + %` | Split horizontally |
+| `LEADER + Tab` | Next tab |
+| `LEADER + SHIFT + Tab` | Previous tab |
+| `LEADER + 1-8` | Switch to tab 1-8 |
+| `LEADER + 9` | Switch to last tab |
+| `LEADER + {` / `}` | Previous / Next tab |
+| `LEADER + r` | Reload configuration |
+| `LEADER + t` | New tab |
+| `LEADER + w` | Close pane |
+| `LEADER + z` | Toggle pane zoom |
+| `LEADER + v` | Open vertical split (optional)|
+| `LEADER + s` | Open horizontal split (optional)|
+| `LEADER + h/j/k/l` | Navigate panes (optional)|
 
 ## Configuration
 
@@ -26,15 +38,11 @@ return config
 ```lua
 {
   navigation = {
-    vim = false,           -- Enable vim-style `h/j/k/l` pane navigation
+    vim = false,  -- Enable vim-style `h/j/k/l` pane navigation
   },
   split = {
-    vim = false -- Enable vim-style splits with `v` and `s`
-  },
-  resize = {
-    vim = false,    -- Enable vim-style resize with `H/J/K/L`
-    pane_resize = 5 -- Number of cells to resize
-  },
+    vim = false   -- Enable vim-style splits with `v` and `s`
+  }
 }
 ```
 
